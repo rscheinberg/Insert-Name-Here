@@ -1,3 +1,5 @@
+Authors: Reed Scheinberg, and Wilsion <last_name>
+
 ## Problem:
 What is the boolean value of the statement "is there a way to get from the starting point to the treasure"?
 
