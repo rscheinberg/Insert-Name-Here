@@ -8,8 +8,13 @@ When we are trying to answer the question "is there a way to get from the starti
 
 ## Version Planner:
 0: Working UserOfMaze Class, with appropriate test cases
+
 1: Working Maze Class, with constructor, and the ability to make a maze layout as desired
+
 2: Working UserOfSolver class, with appropriate test cases
+
 3: Basic Solver Class, with constructor, and any helper methods that are necessary for the recursive solver method
+
 4: Working recursive solver method
+
 5+: Anything else that comes to mind
