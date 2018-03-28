@@ -19,10 +19,10 @@ When we are trying to answer the question "is there a way to get from the starti
 
 5+: Anything else that comes to mind
 
-##Base Case:
+## Base Case:
 When a junction leads to a dead end
 
-##Algorithm:
+## Algorithm:
 For each junction...
 - if this junction results in a dead end,
     - go back one junction and repeat
