@@ -18,3 +18,9 @@ When we are trying to answer the question "is there a way to get from the starti
 4: Working recursive solver method
 
 5+: Anything else that comes to mind
+
+##Base Case:
+When a junction leads to a dead end
+
+##Algorithm:
+For each possible junction, if 
