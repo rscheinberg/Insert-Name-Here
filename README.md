@@ -7,7 +7,7 @@ What is the boolean value of the statement "is there a way to get from the start
 When we are trying to answer the question "is there a way to get from the starting point to the treasure", the recursive abstraction can answer the question "is there a way to get from the starting point to the treasure by going through junction *n*".
 
 ## Base Case:
-When a junction leads to a dead end
+When there is a dead end in front
 
 ## Algorithm:
 For each junction...
