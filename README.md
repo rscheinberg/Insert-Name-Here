@@ -4,10 +4,11 @@
 What is the boolean value of the statement "is there a way to get from the starting point to the treasure"?
 
 ## Recursive Abstraction:
-When we are trying to answer the question "is there a way to get from the starting point to the treasure", the recursive abstraction can answer the question "is there a way to get from the starting point to the treasure by going through junction *n*".
+When we are trying to answer the question "is there a way to get from the starting point to the treasure", the recursive abstraction can answer the question "is there a way to get from the starting point to the treasure by going through path *n*".
 
 ## Base Case:
-When there is a dead end in front
+- When the recursive abstraction has checked all possible paths
+- The player is at an invalid position (i.e. a wall)
 
 ## Algorithm:
 For each junction...
