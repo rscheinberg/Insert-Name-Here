@@ -157,8 +157,9 @@ public class UserOfMaze {
         Maze snapshot;
 
         throw new java.lang.RuntimeException(
-            "Write code to take a snapshot of @candidate. "
-          + "Then, in @candidate, have the explorer go() out of the maze.");
+            snapshot = new Maze(candidate); 
+	    go(2);
+	);
 
         System.out.println(
                           "modified candidate with no explorer"
