@@ -91,7 +91,12 @@ public class Maze {
         explorerPosition = new Vector( old.explorerPosition);
 
         throw new java.lang.RuntimeException(
-            "Write code to copy the maze[][] array and rankCount.");
+            for(int row = 0; row < old.maze.length; row++) {
+		for(int col = 0; col < old.maze[row].length; col++) {
+		    this.maze[row][col] = old.maze[row][col];
+		}
+	    }
+	)
     }
 
 
