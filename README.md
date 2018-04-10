@@ -14,12 +14,9 @@ When we are trying to answer the question "is there a way to get from the starti
 For each possible path...
 - if the player is at an invalid position, //This should not be in the helper function, but in the original method
     - return false
-- else if this path results in a dead end,
-    - go back one path and repeat the Algorithm
-- else,
-  - if this path is the treasure,
+- else if this path is the treasure,
     - return true
-  - else,
+- else,
     - invoke the recursive abstraction
     
 ## Classes & Methods:
