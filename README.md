@@ -7,8 +7,8 @@ What is the boolean value of the statement "is there a way to get from the start
 When we are trying to answer the question "is there a way to get from the starting point to the treasure", the recursive abstraction can answer the question "is there a way to get from the starting point to the treasure by going through path *n*".
 
 ## Base Case:
-- When the recursive abstraction has checked all possible paths
-- The player is at an invalid position (i.e. a wall)
+- When the player is on the treasure --> return true
+- The player is at an invalid position (i.e. a wall) --> return false
 
 ## Algorithm:
 For each possible path...
