@@ -156,10 +156,8 @@ public class UserOfMaze {
 
         Maze snapshot;
 
-        throw new java.lang.RuntimeException(
-            snapshot = new Maze(candidate); 
-	    go(2);
-	);
+        snapshot = new Maze(candidate); 
+	candidate.go(Maze.EAST);
 
         System.out.println(
                           "modified candidate with no explorer"
@@ -181,9 +179,7 @@ public class UserOfMaze {
               ------
          */
 
-        throw new java.lang.RuntimeException(
-            "Write code to undo the go() by making @candidate refer "
-          + "to an unchanged copy of the maze.");
+        candidate = snapshot;
 
         System.out.println(
                             "restored candidate, with an explorer"
