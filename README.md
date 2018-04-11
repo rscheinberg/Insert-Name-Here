@@ -4,43 +4,59 @@
 What is the boolean value of the statement "is there a way to get from the starting point to the treasure"?
 
 ## Recursive Abstraction:
-When we are trying to answer the question "is there a way to get from the starting point to the treasure", the recursive abstraction can answer the question "is there a way to get from the starting point to the treasure by going through path *n*".
+When I am asked to find out if "there is a way to get from the starting point to the treasure", the recursive abstraction can answer the question if "there is a way to get from the starting point to the treasure by going through this path".
 
 ## Base Case:
 - When the player is on the treasure --> return true
 - The player is at an invalid position (i.e. a wall) --> return false
 
 ## Algorithm:
-For each possible path...
-- if the player is at an invalid position, //This should not be in the helper function, but in the original method
+- if the player is at an invalid position
     - return false
-- else if this path is the treasure,
+- else if this path is the treasure
     - return true
-- else,
-    - invoke the recursive abstraction
+- else
+    - for each adjacent square:
+        - if this square is a valid path:
+            - invoke the recursive abstraction
+    - backtrack one path and repeat the Algorithm 
     
 ## Classes & Methods:
-- Maze Class
-    - Constructor
-    - toString
-    - Clone
-    - get
-        - returns value for a specific junction, i.e. treasure, dead end, or more junctions
-    - set
-        - allows user to modify the maze, simply for testing purposes
-- MazeSolver Class
-    - Constructor
-    - toString
-    - Solver
-        - Uses recursion, and specified algorithm
-    - Any Helper methods that Solver requires
-- UserOfMaze Class
-    - Main 
-        - Tests Maze Class and its methods
-- UserOfMazeSolver Class
-    - Main
-        - Tests MazeSolver class and its methods
+Displayer:
+- Fields:
+    - windowHeight
+    - console
+- Constructor
+- Methods:
+    - atTopOfWindow
+    - lineSeparatorsIn
 
+Maze:
+- Fields:
+    - maze
+    - rankCount
+    - explorerPosition
+- Constructor
+- Copy Constructor
+- Methods:
+    - toString
+    - go
+    - dropA
+    - explorerIsOnA
+    - add
+    - equals
+    
+UserOfMaze:
+- Fields:
+    - displayer
+- Methods:
+    - main
+    - moveTest
+    - dropTest
+    - copyConstructTest
+    - displayerTest
+    - snapshotDemo
+    
 ## Version Planner:
 0: Working UserOfMaze Class, with appropriate test cases
 
