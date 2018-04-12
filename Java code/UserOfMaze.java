@@ -1,10 +1,8 @@
 /**
   Test Maze class.
-
   Requires command line arguments:
   o  the name of a file containing a maze.
   o  the rank and file where an explorer is starting
-
   For example,
       java UserOfMaze mazes/4cell_treasureWest.txt -1 -1  # no explorer
  */
@@ -28,10 +26,10 @@ public class UserOfMaze {
         copyConstructTest( maze);
 
         // test Displayer
-        displayer = new Displayer( Integer.parseInt( commandLine[3]));
-        displayerTest( maze);
+        //displayer = new Displayer( Integer.parseInt( commandLine[3]));
+        //displayerTest( maze);
 
-        snapshotDemo( maze);
+        //snapshotDemo( maze);
     }
 
 
@@ -101,7 +99,6 @@ public class UserOfMaze {
       from the original.
       Run using a shell command like...
           java UserOfMaze mazes/intersection_treasureNorth.txt 1 1
-
      */
     private static void copyConstructTest( Maze old) {
         Maze copy = new Maze( old);
@@ -172,7 +169,6 @@ public class UserOfMaze {
               ------
               |0** |
               ------
-
               unchanged snapshot
               ------
               |0e* |
