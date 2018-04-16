@@ -12,6 +12,7 @@ public class UserOfMazeSolver {
                             , Integer.parseInt( commandLine[1])
                             , Integer.parseInt( commandLine[2])
                             );
+         //testing the toString() also allows for the testing of newly added accessors and mutators simultaneously
         System.out.println( maze + System.lineSeparator());
         MazeSolver test = new MazeSolver();
         System.out.println( test.solveMaze(maze));

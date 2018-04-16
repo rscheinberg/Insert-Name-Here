@@ -6,6 +6,7 @@
  */
 public class Displayer {
     
+    //fields
     private int windowHeight;
     private java.io.Console console;
 

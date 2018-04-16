@@ -1,40 +1,40 @@
 **Authors:** Reed Scheinberg, and Wilson Zhao
 
 ## Breakdown of this Repository:
-- Maze Project Files
-    - Java Code
+- Projec_Files
+    - Java_Code
         - Displayer.java
         - Maze.java
         - MazeSolver.java
         - UserOfMaze.java
         - UserOfMazeSolver.java
-    - Test Mazes
-        - Holmes' Tests
+    - Test_Mazes
+        - Holmes_Tests
             - 4cell_treasureWest.txt
             - intersection_noTreasure.txt
             - intersection_treasureNorth.txt
-        - My Tests
-            - All stepping stones.txt
+        - My_Tests
+            - All_stepping_stones.txt
         - Piazza's Tests
             - 16x32.txt
-            - Many spots, hole, no solution.txt
-            - One spot, no solution.txt
-            - One spot, treasure.txt
-            - path with choice.txt
-            - path with turn.txt
+            - Many_spots_hole_no_solution.txt
+            - One_spot_no_solution.txt
+            - One_spot_treasure.txt
+            - path_with_choice.txt
+            - path_with_turn.txt
             - steppingStonesEverywhere.txt
             - straightpathtotreasure.txt
             - thisOneBetterWork.txt
-            - Trouble hitting edge of maze?.txt
-            - Trouble hitting walls?.txt
-            - Trouble Turning?.txt
-            - Trouble with finding treasure.txt
-            - Two spots, go EAST.txt
-            - Two spots, go NORTH.txt
-            - Two spots, go SOUTH.txt
-            - Two spots, go WEST.txt
-            - Two spots, no solution(Horizontal).txt
-            - Two spots, no solution(Vertical).txt
+            - Trouble_hitting_edge_of_maze.txt
+            - Trouble_hitting_walls.txt
+            - Trouble_Turning.txt
+            - Trouble_with_finding_treasure.txt
+            - Two_spots_go_EAST.txt
+            - Two_spots_go_NORTH.txt
+            - Two_spots_go_SOUTH.txt
+            - Two_spots_go_WEST.txt
+            - Two_spots_no_solution_Horizontal.txt
+            - Two_spots_no_solution_Vertical.txt
 - README.md
 
 ## The Problem:
@@ -102,7 +102,6 @@ When I am asked to find out if "there is a way to get from the starting point to
     - Methods
         - main
 
-    
 ## Version Planner (properly updated):
 v0:
 - Working completed Maze class
@@ -111,9 +110,14 @@ v0:
 - Working UserOfMazeSolver class, that tests the solve method in Maze Solver
 v1:
 - Updated Maze Solver class with total mazes solved field, solved mazes list field, a constructor, toString, and additional accessors
-v1+:
-- Nothing planned at the moment
-- Would be nice to implement something that finds all of the solutions for a maze
+v2:
+- Bug fixing
+    - NullPointerException Error
+    - Fixed bugs in the MazeSolver addSolve method
+- Added addFail method, and additional corresponding accessor method
+- Added header and line comments for further/future clarity
+- Updated UserOfMazeSolver to accommodate changes
+- GitHub and project file hierarchy was modified to meet conventional naming standards
 
 ## Known Bugs:
-- NullPointException Error, seems to randomly occur in both Maze Solver and Maze.  The program seems to attempt to move the explorer based on a null vector, which it cannot do.  Solution to this issue will be addressed in a future version.
+- None 
